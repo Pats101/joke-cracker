@@ -6,7 +6,7 @@ html {
 
 body {
   margin: 0;
-  background: #1CB5E0;
+  background: #c31432; /*#1CB5E0;*/
 }
 
 .container {
@@ -16,7 +16,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url('./robot.gif');
+  background: url('./giphieAlien.gif');
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -30,14 +30,16 @@ button {
   font-family: 'Courier New', Courier, monospace;
   font-size: 20px;
   color: white;
-  background: #ff3482;
+  background: #da2a6d;
   border: none;
   border-radius: 5px;
   box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
 }
 button:hover {
   filter: brightness(95%);
   cursor: pointer;
+  background: purple;
 }
 
 button:active {
