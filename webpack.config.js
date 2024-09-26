@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  mode: 'production',
+    mode: 'production', // Set the mode to production
   entry: './script.js', // Entry point of your application
   output: {
     filename: 'bundle.js', // Output bundle file
@@ -30,5 +30,4 @@ module.exports = {
     compress: true, // Enable gzip compression
     port: 9000 // Port number for the dev server
   },
-  mode: 'development' // Set the mode to development
 };
