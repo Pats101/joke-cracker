@@ -28,14 +28,14 @@ jobs:
               args: "--path . --verbose"
 
           - name: Set up Node.js
-            uses: actions/setup-node@v2
+            uses: actions/setup-node@v3
             with:
-                node-version: '14'
+                node-version: '18'
 
           - name: Install dependencies
             run: npm install
 
-          - name: Run lint
+          - name: Run ESLint
             run: npm run lint
 
           - name: Build project
