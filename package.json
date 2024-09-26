@@ -1,0 +1,39 @@
+{
+  "name": "joke-cracker-generator",
+  "version": "1.0.0",
+  "description": "A project to deploy the Joke Cracker Generator application",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "build": "webpack --config webpack.config.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/joke-cracker-generator.git"
+  },
+  "keywords": [
+    "joke",
+    "generator",
+    "deploy"
+  ],
+  "author": "Patrick Tonderai Ganhiwa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yourusername/joke-cracker-generator/issues"
+  },
+  "homepage": "https://github.com/yourusername/joke-cracker-generator#readme",
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.4",
+    "@eslint/js": "^9.11.1",
+    "babel-loader": "^9.2.1",
+    "eslint": "^9.11.1",
+    "globals": "^15.9.0",
+    "typescript-eslint": "^8.7.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "gitleaks": "^1.0.0"
+  }
+}

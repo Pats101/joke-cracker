@@ -1,0 +1,42 @@
+# This GitHub Actions workflow automates the deployment process for the Inspiring Quote Generator application.
+# It is triggered on push events to the main branch and includes the following steps:
+# 1. Checkout the repository.
+# 2. Set up the Node.js environment.
+# 3. Install dependencies using npm.
+# 4. Run tests to ensure code quality.
+# 5. Build the application.
+# 6. Deploy the application to the specified hosting service.
+name: Deploy Joke Cracker Generator
+
+on:
+    pull_request:
+        branches:
+            - master
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+          - name: Checkout repository
+            uses: actions/checkout@v2
+
+          - name: Run Gitleaks to detect sensitive data
+            uses: zricethezav/gitleaks-action@v1.2.0
+            with:
+              config_path: .gitleaks.toml
+              args: "--path . --verbose"
+
+          - name: Set up Node.js
+            uses: actions/setup-node@v3
+            with:
+                node-version: '18'
+
+          - name: Install dependencies
+            run: npm install
+
+          - name: Run ESLint
+            run: npm run lint
+
+          - name: Build project
+            run: npm run build
