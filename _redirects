@@ -1,0 +1,5 @@
+# Redirect /old-page to /new-page
+/old-page  /new-page  301
+
+# For SPAs, redirect all 404s to the index.html
+/*    /index.html   200

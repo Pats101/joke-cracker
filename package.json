@@ -1,0 +1,36 @@
+{
+  "name": "joke-cracker-generator",
+  "version": "1.0.0",
+  "description": "A project to deploy the Joke Cracker Generator application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "echo 'Building the application...' && exit 0",
+    "deploy": "echo 'Deploying the application...' && exit 0",
+    "test": "echo 'Running tests...' && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/joke-cracker-generator.git"
+  },
+  "keywords": [
+    "joke",
+    "generator",
+    "deploy"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yourusername/joke-cracker-generator/issues"
+  },
+  "homepage": "https://github.com/yourusername/joke-cracker-generator#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.11.1",
+    "eslint": "^9.11.1",
+    "globals": "^15.9.0",
+    "typescript-eslint": "^8.7.0"
+  },
+  "dependencies": {
+    "gitleaks": "^1.0.0"
+  }
+}
