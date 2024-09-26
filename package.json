@@ -4,10 +4,9 @@
   "description": "A project to deploy the Joke Cracker Generator application",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "build": "echo 'Building the application...' && exit 0",
-    "deploy": "echo 'Deploying the application...' && exit 0",
-    "test": "echo 'Running tests...' && exit 0"
+    "lint": "eslint .",
+    "build": "webpack --config webpack.config.js",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
